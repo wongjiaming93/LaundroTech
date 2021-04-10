@@ -22,12 +22,12 @@
                 redirect: 'follow'
             };
 		
-		alert("hello world");
+		
             // make API call with parameters and use promises to get response
-//             fetch("arn:aws:execute-api:us-east-1:177888792149:hlimcu55w5/*/POST/", requestOptions)
-//             .then(response => response.text())
-//             .then(result => alert(JSON.parse(result).body))
-//             .catch(error => console.log('error', error));
+            fetch("https://hlimcu55w5.execute-api.us-east-1.amazonaws.com/JM", requestOptions)
+            .then(response => response.text())
+            .then(result => alert(JSON.parse(result).body))
+            .catch(error => console.log('error', error));
         }
     </script>
 	<head>
