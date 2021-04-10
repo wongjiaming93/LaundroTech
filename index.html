@@ -24,7 +24,7 @@
 		
 		
             // make API call with parameters and use promises to get response
-            fetch("https://hlimcu55w5.execute-api.us-east-1.amazonaws.com/JM", requestOptions)
+            fetch("https://hlimcu55w5.execute-api.us-east-1.amazonaws.com/JM/login", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
