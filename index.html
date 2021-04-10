@@ -22,7 +22,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("YOUR-API-INVOKE-URL", requestOptions)
+            fetch("arn:aws:execute-api:us-east-1:177888792149:hlimcu55w5/*/POST/", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
