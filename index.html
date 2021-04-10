@@ -21,11 +21,13 @@
                 body: raw,
                 redirect: 'follow'
             };
+		
+		alert("hello world");
             // make API call with parameters and use promises to get response
-            fetch("arn:aws:execute-api:us-east-1:177888792149:hlimcu55w5/*/POST/", requestOptions)
-            .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
-            .catch(error => console.log('error', error));
+//             fetch("arn:aws:execute-api:us-east-1:177888792149:hlimcu55w5/*/POST/", requestOptions)
+//             .then(response => response.text())
+//             .then(result => alert(JSON.parse(result).body))
+//             .catch(error => console.log('error', error));
         }
     </script>
 	<head>
@@ -85,7 +87,7 @@
         <!-- set button onClick method to call function we defined passing input values as parameters -->
         <button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
     </form>
-								<button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
+								
 							</header>
 							<section class="tiles">
 								<article class="style1">
